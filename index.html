@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ANT61 Beacon Story Cards</title>
+    <title>ANT61 Beacon Scenario Cards</title>
     <style>
         * {
             margin: 0;
@@ -286,20 +286,10 @@
 
         <div class="cards-grid" id="cardsGrid">
             <!-- Cards will be generated here -->
-            <!-- <button id="fullscreen-button">Go Fullscreen</button> -->
         </div>
     </div>
 
     <script>
-        document.getElementById('fullscreen-button').addEventListener('click', function() {
-            if (document.documentElement.requestFullscreen) {
-                document.documentElement.requestFullscreen();
-            } else if (document.documentElement.webkitRequestFullscreen) { // Safari
-                document.documentElement.webkitRequestFullscreen();
-            } else if (document.documentElement.msRequestFullscreen) { // IE11
-                document.documentElement.msRequestFullscreen();
-            }
-        });
         const scenarios = [
             {
                 title: "Satellite Anomaly",
