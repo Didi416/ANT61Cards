@@ -305,7 +305,6 @@
         <div class="header">
             <h1>ANT61 Beacon Scenario Cards</h1>
             <p>Interactive scenarios comparing satellite operations with and without The Beacon technology</p>
-            <button id="fullscreen-btn">Go Fullscreen</button>
         </div>
 
         <div class="instructions">
@@ -319,7 +318,7 @@
     </div>
 
     <script>
-        document.getElementById('fullscreen-btn').addEventListener('click', function() {
+        document.getElementById('fullscreen-button').addEventListener('click', function() {
             if (document.documentElement.requestFullscreen) {
                 document.documentElement.requestFullscreen();
             } else if (document.documentElement.webkitRequestFullscreen) { // Safari
