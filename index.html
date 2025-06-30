@@ -235,6 +235,27 @@
             font-size: 1rem;
         }
 
+        .fullscreen-button {
+            padding: 22px 50px;
+            font-size: 20px;
+            font-weight: 600;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
+            color: white;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .fullscreen-button:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-3px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+        }
+
         @media (max-width: 768px) {
             .cards-grid {
                 grid-template-columns: 1fr;
@@ -277,7 +298,7 @@
         <div class="header">
             <h1>ANT61 Beacon Scenario Cards</h1>
             <p>Interactive scenarios comparing satellite operations with and without The Beacon technology</p>
-            <button id="fullscreen-btn">Go Fullscreen</button>
+            <button class="fullscreen-button">Go Fullscreen</button>
         </div>
 
         <div class="instructions">
