@@ -24,6 +24,33 @@
             margin: 0 auto;
         }
 
+        .fullscreen-button {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: rgb(255, 255, 255);
+            border: none;
+            color: black;
+            padding: 12px 24px;
+            border-radius: 25px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            z-index: 1000;
+        }
+
+        .fullscreen-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+            background: #feca34;
+        }
+
         .header {
             text-align: center;
             margin-bottom: 40px;
@@ -273,6 +300,7 @@
     </style>
 </head>
 <body>
+    <button class="fullscreen-button" id="fullscreen-button">Fullscreen</button>
     <div class="container">
         <div class="header">
             <h1>ANT61 Beacon Scenario Cards</h1>
